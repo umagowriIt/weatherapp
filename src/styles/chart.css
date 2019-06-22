@@ -1,0 +1,40 @@
+.graphFilter {
+    max-width: 600px;
+    width: 100%;
+}
+
+.customRadio {
+    text-align: right;
+
+}
+
+h6 {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+.customRadio label {
+    background: #ececec;
+    position: relative;
+    padding: 5px 14px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+.customRadio .active label {
+    background: #17c1bb;
+    color: #fff;
+}
+
+.customRadio  label input[type="radio"] {
+    opacity: 0.0;
+    position: absolute;
+}
+
+canvas {
+    margin-top: 20px;
+}
+

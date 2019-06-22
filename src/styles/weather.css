@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+body {
+  font-size: 12px;
+}
+
+h2,h3 {
+  font-weight: normal;  
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.loaderContent {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.9);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+#weatherMainWrap {
+  max-width: 600px;
+  margin: 30px auto;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  font-size: 12px;
+  color: #7d7b7b;
+  min-height: 200px;
+  position: relative;
+}
+
+
+
+.weatherDays li.active {
+  background: #eee;
+}
+
+h2 {
+  font-size: 1.75rem;   
+}
+
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainForecast , .filtersWrap {
+  flex: 1;
+}
+
+.filtersWrap {
+  flex: 1;
+}
+
+.mainForecast .mainTemperature {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: #4c4c4c;
+}
+
+.mainForecast .mainTemperature span {
+  font-size: 1rem;
+    position: relative;
+    top: -20px;
+    left: -9px;
+} 
+
+.weatherDays li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 0;
+  border: solid 1px #ccc;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 6px
+}
+
+.weatherDays {
+  overflow: hidden;
+}
+
+.weatherDays li p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+.weatherDays li p.day {
+  font-size: 1rem;
+  color: #8c8c8c;
+  font-weight: bold;
+ }
+
+ .weatherDays li p span:first-child {
+  color: #272727;
+}
+
+ .weatherDays li p span {
+    margin: 0 5px;
+}
+
+.weatherDays li p span sup {
+  position: relative;
+  top: -1px;
+  font-size: 0.5rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 660px) {
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #weatherMainWrap {
+    border: 0;
+  }
+
+  .mainForecast {
+    flex: 2;
+  }
+
+  #weatherMainWrap {
+    padding: 0;
+    width: 95%;
+  }
+
+  .weatherDays  {
+    display: block;
+  }
+
+  .weatherDays li {
+    width: 30%;
+    margin: 1% 1%;
+  }
+
+
+}
